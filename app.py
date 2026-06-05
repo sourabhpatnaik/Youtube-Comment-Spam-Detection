@@ -380,7 +380,7 @@ div[data-testid="stHorizontalBlock"] > div:nth-child(2) div[data-testid="stFormS
 @st.cache_resource
 def load_model():
     # ADJUST THIS STRING TO MATCH YOUR EXACT FILE FILENAME AND EXTENSION ON GITHUB
-    return joblib.load("yt_spam_detection_model")
+    return joblib.load("Model/yt_spam_detection_model.pkl")
 
 model_data = load_model()
 classifier_model = model_data['model']
